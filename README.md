@@ -1,4 +1,6 @@
-﻿﻿**1. Write a function to reverse a string** - This file contains multiple JavaScript functions to reverse a string using different approaches: built-in methods, a for loop, recursion, reduce, and a while loop.
+﻿﻿# Coding Practices for JavaScript.
+
+**1. Write a function to reverse a string** - This file contains multiple JavaScript functions to reverse a string using different approaches: built-in methods, a for loop, recursion, reduce, and a while loop.
 
 **2. Create a palindrome checker** - This file contains multiple JavaScript functions to check if a string is a palindrome using different approaches: built-in methods, a for loop, recursion, two pointers, and every.
 
