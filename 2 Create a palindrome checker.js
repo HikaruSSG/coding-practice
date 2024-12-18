@@ -2,8 +2,9 @@
 
 // Solution 1: Using built-in methods
 function isPalindrome1(str) {
-  const reversed = str.split("").reverse().join("");
-  return str === reversed;
+  const cleanStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const reversedStr = cleanStr.split('').reverse().join('');
+  return cleanStr === reversedStr;
 }
 
 // Solution 2: Using a for loop
