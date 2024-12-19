@@ -26,6 +26,9 @@ function isValidSudoku1(board) {
     }
     return true;
 }
+// Pros: Efficient and concise, uses sets to check for duplicates.
+// Cons: None.
+// Recommended: This is generally the recommended approach due to its efficiency and clarity.
 
 // Solution 2: Using nested for loops and helper functions
 function isValidSudoku2(board) {
@@ -77,6 +80,8 @@ function isValidSudoku2(board) {
     }
     return true;
 }
+// Pros: More structured, uses helper functions for row, column, and box validation.
+// Cons: Slightly more verbose than the first approach.
 
 // Solution 3: Using a while loop and helper functions
 function isValidSudoku3(board) {
@@ -143,6 +148,8 @@ function isValidSudoku3(board) {
     }
     return true;
 }
+// Pros: Similar to the second solution, uses while loops.
+// Cons: Slightly more verbose than the second approach.
 
 // Solution 4: Using forEach and sets
 function isValidSudoku4(board) {
@@ -169,6 +176,8 @@ function isValidSudoku4(board) {
     }
     return true;
 }
+// Pros: Uses forEach for iteration.
+// Cons: Slightly less efficient than the nested for loop approach.
 
 // Solution 5: Using reduce and sets
 function isValidSudoku5(board) {
@@ -195,3 +204,5 @@ function isValidSudoku5(board) {
     }
     return true;
 }
+// Pros: Uses reduce for iteration.
+// Cons: Less efficient than the nested for loop approach.

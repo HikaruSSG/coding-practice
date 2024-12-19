@@ -11,6 +11,8 @@ function createStack1() {
     size: () => stack.length,
   };
 }
+// Pros: Simple and easy to understand.
+// Cons: Less structured than other approaches.
 
 // Solution 2: Using an object and methods
 function createStack2() {
@@ -33,6 +35,8 @@ function createStack2() {
         }
     };
 }
+// Pros: Similar to the first solution, but uses methods.
+// Cons: Less structured than the class approach.
 
 // Solution 3: Using a class
 class Stack3 {
@@ -59,6 +63,9 @@ class Stack3 {
 function createStack3() {
     return new Stack3();
 }
+// Pros: More structured and maintainable, uses a class for encapsulation.
+// Cons: Slightly more verbose than the object literal approach.
+// Recommended: This is generally the recommended approach due to its structure and maintainability.
 
 // Solution 4: Using a linked list
 function createStack4() {
@@ -90,6 +97,8 @@ function createStack4() {
         }
     };
 }
+// Pros: Uses a linked list for storing stack elements, avoids resizing.
+// Cons: More complex to implement, less common for this use case.
 
 // Solution 5: Using closures
 function createStack5() {
@@ -112,3 +121,5 @@ function createStack5() {
         }
     };
 }
+// Pros: Uses closures to encapsulate the stack array.
+// Cons: Less structured than the class approach.

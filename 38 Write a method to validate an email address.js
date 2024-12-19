@@ -5,12 +5,17 @@ function validateEmail1(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);
 }
+// Pros: Concise and easy to understand, uses a basic regular expression.
+// Cons: Does not cover all valid email formats, may not be accurate enough.
 
 // Solution 2: Using a more detailed regular expression
 function validateEmail2(email) {
     const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return regex.test(email);
 }
+// Pros: More accurate, covers more valid email formats.
+// Cons: More complex to understand, can be less readable.
+// Recommended: This is generally the recommended approach due to its accuracy and robustness.
 
 // Solution 3: Using a simple check for @ and .
 function validateEmail3(email) {
@@ -27,6 +32,8 @@ function validateEmail3(email) {
     }
     return true;
 }
+// Pros: Simple and easy to understand.
+// Cons: Does not cover all valid email formats, may not be accurate enough.
 
 // Solution 4: Using a for loop and character checks
 function validateEmail4(email) {
@@ -48,6 +55,8 @@ function validateEmail4(email) {
     }
     return true;
 }
+// Pros: Simple and easy to understand, avoids regular expressions.
+// Cons: Does not cover all valid email formats, may not be accurate enough.
 
 // Solution 5: Using a while loop and character checks
 function validateEmail5(email) {
@@ -71,3 +80,5 @@ function validateEmail5(email) {
     }
     return true;
 }
+// Pros: Similar to the for loop approach, uses a while loop.
+// Cons: Does not cover all valid email formats, may not be accurate enough.

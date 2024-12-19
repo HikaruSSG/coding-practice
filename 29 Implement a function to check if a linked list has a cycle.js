@@ -18,6 +18,9 @@ function hasCycle1(head) {
   }
   return false;
 }
+// Pros: Efficient, uses constant space, good performance.
+// Cons: Slightly more complex to understand.
+// Recommended: This is generally the recommended approach due to its efficiency and minimal space complexity.
 
 // Solution 2: Using a Set
 function hasCycle2(head) {
@@ -32,6 +35,8 @@ function hasCycle2(head) {
     }
     return false;
 }
+// Pros: Simple and easy to understand.
+// Cons: Uses extra space to store visited nodes.
 
 // Solution 3: Using a Map
 function hasCycle3(head) {
@@ -46,6 +51,8 @@ function hasCycle3(head) {
     }
     return false;
 }
+// Pros: Similar to the Set approach.
+// Cons: Uses extra space to store visited nodes.
 
 // Solution 4: Using a try-catch block (modifying the list)
 function hasCycle4(head) {
@@ -67,6 +74,8 @@ function hasCycle4(head) {
         }
     }
 }
+// Pros: Avoids using extra space.
+// Cons: Modifies the original linked list, less efficient.
 
 // Solution 5: Using a while loop and a counter
 function hasCycle5(head) {
@@ -81,3 +90,5 @@ function hasCycle5(head) {
     }
     return false;
 }
+// Pros: Simple and easy to understand.
+// Cons: Not a reliable way to detect cycles, may not work for very long lists.

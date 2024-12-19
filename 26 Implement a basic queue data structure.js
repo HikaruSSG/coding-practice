@@ -11,6 +11,8 @@ function createQueue1() {
     size: () => queue.length,
   };
 }
+// Pros: Simple and easy to understand.
+// Cons: Less structured than other approaches, shift operation can be inefficient for large queues.
 
 // Solution 2: Using an object and methods
 function createQueue2() {
@@ -33,6 +35,8 @@ function createQueue2() {
         }
     };
 }
+// Pros: Similar to the first solution, but uses methods.
+// Cons: Less structured than the class approach, shift operation can be inefficient for large queues.
 
 // Solution 3: Using a class
 class Queue3 {
@@ -59,6 +63,9 @@ class Queue3 {
 function createQueue3() {
     return new Queue3();
 }
+// Pros: More structured and maintainable, uses a class for encapsulation.
+// Cons: Slightly more verbose than the object literal approach, shift operation can be inefficient for large queues.
+// Recommended: This is generally the recommended approach due to its structure and maintainability.
 
 // Solution 4: Using a linked list
 function createQueue4() {
@@ -101,6 +108,8 @@ function createQueue4() {
         }
     };
 }
+// Pros: Uses a linked list for storing queue elements, avoids resizing and inefficient shift operation.
+// Cons: More complex to implement, less common for this use case.
 
 // Solution 5: Using closures
 function createQueue5() {
@@ -123,3 +132,5 @@ function createQueue5() {
         }
     };
 }
+// Pros: Uses closures to encapsulate the queue array.
+// Cons: Less structured than the class approach, shift operation can be inefficient for large queues.

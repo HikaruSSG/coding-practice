@@ -4,6 +4,9 @@
 function decimalToBinary1(decimal) {
   return decimal.toString(2);
 }
+// Pros: Concise and efficient, leverages built-in JavaScript method.
+// Cons: None.
+// Recommended: This is generally the recommended approach due to its conciseness and efficiency.
 
 // Solution 2: Using a while loop
 function decimalToBinary2(decimal) {
@@ -17,6 +20,8 @@ function decimalToBinary2(decimal) {
     }
     return binary;
 }
+// Pros: Good performance, explicit control over the conversion process.
+// Cons: More verbose than the toString(2) approach.
 
 // Solution 3: Using recursion
 function decimalToBinary3(decimal) {
@@ -28,6 +33,8 @@ function decimalToBinary3(decimal) {
     }
     return decimalToBinary3(Math.floor(decimal / 2)) + (decimal % 2);
 }
+// Pros: Elegant and concise for those familiar with recursion.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for large numbers.
 
 // Solution 4: Using bitwise operations
 function decimalToBinary4(decimal) {
@@ -41,6 +48,8 @@ function decimalToBinary4(decimal) {
     }
     return binary;
 }
+// Pros: Efficient, uses bitwise operations.
+// Cons: Less readable than the toString(2) approach.
 
 // Solution 5: Using array and join
 function decimalToBinary5(decimal) {
@@ -54,3 +63,5 @@ function decimalToBinary5(decimal) {
     }
     return binaryArray.join('');
 }
+// Pros: Good performance, uses array for storing binary digits.
+// Cons: More verbose than the toString(2) approach.

@@ -12,6 +12,8 @@ function bubbleSort1(arr) {
   }
   return arr;
 }
+// Pros: Simple and easy to understand.
+// Cons: Inefficient for large arrays, has a time complexity of O(n^2).
 
 // Solution 2: Insertion Sort
 function insertionSort2(arr) {
@@ -26,6 +28,8 @@ function insertionSort2(arr) {
     }
     return arr;
 }
+// Pros: Efficient for small arrays and nearly sorted arrays.
+// Cons: Inefficient for large arrays, has a time complexity of O(n^2).
 
 // Solution 3: Selection Sort
 function selectionSort3(arr) {
@@ -43,6 +47,8 @@ function selectionSort3(arr) {
     }
     return arr;
 }
+// Pros: Simple and easy to understand.
+// Cons: Inefficient for large arrays, has a time complexity of O(n^2).
 
 // Solution 4: Merge Sort
 function mergeSort4(arr) {
@@ -70,6 +76,9 @@ function mergeSort4(arr) {
         return result.concat(left.slice(i)).concat(right.slice(j));
     }
 }
+// Pros: Efficient for large arrays, has a time complexity of O(n log n), stable sort.
+// Cons: More complex to understand than simpler sorting algorithms.
+// Recommended: This is generally the recommended approach due to its efficiency and stability.
 
 // Solution 5: Quick Sort
 function quickSort5(arr) {
@@ -88,3 +97,5 @@ function quickSort5(arr) {
     }
     return [...quickSort5(left), pivot, ...quickSort5(right)];
 }
+// Pros: Efficient for large arrays, has an average time complexity of O(n log n).
+// Cons: Can be less efficient in worst-case scenarios, not a stable sort.

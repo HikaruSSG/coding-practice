@@ -8,6 +8,8 @@ function findKthSmallest1(arr, k) {
   const sortedArr = [...arr].sort((a, b) => a - b);
   return sortedArr[k - 1];
 }
+// Pros: Simple and easy to understand, uses built-in sort method.
+// Cons: Less efficient for large arrays, has a time complexity of O(n log n).
 
 // Solution 2: Using a min heap
 function findKthSmallest2(arr, k) {
@@ -24,6 +26,8 @@ function findKthSmallest2(arr, k) {
     }
     return kthSmallest;
 }
+// Pros: Efficient for finding the kth smallest element, has a time complexity of O(n log k).
+// Cons: Requires additional data structure (min heap).
 
 // Solution 3: Using quickselect
 function findKthSmallest3(arr, k) {
@@ -58,6 +62,9 @@ function findKthSmallest3(arr, k) {
     };
     return quickSelect([...arr], 0, arr.length - 1, k);
 }
+// Pros: Efficient, has an average time complexity of O(n), in-place algorithm.
+// Cons: More complex to understand than the sort approach.
+// Recommended: This is generally the recommended approach due to its efficiency, especially for large arrays.
 
 // Solution 4: Using a max heap
 function findKthSmallest4(arr, k) {
@@ -73,6 +80,8 @@ function findKthSmallest4(arr, k) {
     }
     return maxHeap.dequeue().element;
 }
+// Pros: Efficient for finding the kth smallest element, has a time complexity of O(n log k).
+// Cons: Requires additional data structure (max heap).
 
 // Solution 5: Using a for loop and splice
 function findKthSmallest5(arr, k) {
@@ -97,3 +106,5 @@ function findKthSmallest5(arr, k) {
     }
     return tempArr[minIndex];
 }
+// Pros: Simple to understand.
+// Cons: Less efficient due to repeated array traversals and splice operations.

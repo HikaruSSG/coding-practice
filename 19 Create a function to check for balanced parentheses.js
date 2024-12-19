@@ -19,6 +19,9 @@ function isBalanced1(str) {
   }
   return stack.length === 0;
 }
+// Pros: Efficient and easy to understand, uses a stack to keep track of opening parentheses.
+// Cons: None.
+// Recommended: This is generally the recommended approach due to its efficiency and clarity.
 
 // Solution 2: Using recursion
 function isBalanced2(str) {
@@ -49,6 +52,8 @@ function isBalanced2(str) {
         return isBalanced2(str.slice(1));
     }
 }
+// Pros: Elegant and concise for those familiar with recursion.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for large strings.
 
 // Solution 3: Using a counter
 function isBalanced3(str) {
@@ -65,6 +70,8 @@ function isBalanced3(str) {
     }
     return count === 0;
 }
+// Pros: Simple and easy to understand, only works for parentheses.
+// Cons: Does not handle other types of brackets, less flexible.
 
 // Solution 4: Using replace
 function isBalanced4(str) {
@@ -75,6 +82,8 @@ function isBalanced4(str) {
     } while (len !== str.length);
     return str.length === 0;
 }
+// Pros: Concise and easy to understand.
+// Cons: Less efficient, may not handle nested parentheses correctly.
 
 // Solution 5: Using a while loop and stack
 function isBalanced5(str) {
@@ -101,3 +110,5 @@ function isBalanced5(str) {
     }
     return stack.length === 0;
 }
+// Pros: Similar to the stack approach, uses a while loop.
+// Cons: Slightly more verbose than the stack approach.

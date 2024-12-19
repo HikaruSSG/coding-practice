@@ -34,6 +34,9 @@ function isOneEditAway1(str1, str2) {
   }
   return edits <= 1;
 }
+// Pros: Efficient and easy to understand, uses a for loop for iteration.
+// Cons: None.
+// Recommended: This is generally the recommended approach due to its efficiency and clarity.
 
 // Solution 2: Using a while loop and character comparison
 function isOneEditAway2(str1, str2) {
@@ -69,6 +72,8 @@ function isOneEditAway2(str1, str2) {
     }
     return edits <= 1;
 }
+// Pros: Similar to the for loop approach, uses a while loop.
+// Cons: Slightly more verbose than the for loop approach.
 
 // Solution 3: Using filter and reduce
 function isOneEditAway3(str1, str2) {
@@ -104,6 +109,8 @@ function isOneEditAway3(str1, str2) {
     }
     return edits <= 1;
 }
+// Pros: Similar to the for loop approach, uses a while loop.
+// Cons: Slightly more verbose than the for loop approach.
 
 // Solution 4: Using a for loop and splice
 function isOneEditAway4(str1, str2) {
@@ -141,6 +148,8 @@ function isOneEditAway4(str1, str2) {
     }
     return edits <= 1;
 }
+// Pros: In-place modification of arrays.
+// Cons: Less efficient due to splice operation, modifies the original arrays.
 
 // Solution 5: Using a for loop and character counts
 function isOneEditAway5(str1, str2) {
@@ -167,3 +176,5 @@ function isOneEditAway5(str1, str2) {
     }
     return edits + remaining <= 1;
 }
+// Pros: Avoids explicit character comparison.
+// Cons: Less efficient due to extra object creation and iteration.

@@ -10,6 +10,8 @@ function findMedianSortedArrays1(arr1, arr2) {
     return merged[mid];
   }
 }
+// Pros: Simple and easy to understand, uses built-in sort method.
+// Cons: Less efficient for large arrays, has a time complexity of O((m+n) log (m+n)).
 
 // Solution 2: Using binary search
 function findMedianSortedArrays2(arr1, arr2) {
@@ -40,6 +42,9 @@ function findMedianSortedArrays2(arr1, arr2) {
         }
     }
 }
+// Pros: Efficient, has a time complexity of O(log(min(m,n))).
+// Cons: More complex to understand than the merge and sort approach.
+// Recommended: This is generally the recommended approach due to its efficiency, especially for large arrays.
 
 // Solution 3: Using a while loop and two pointers
 function findMedianSortedArrays3(arr1, arr2) {
@@ -70,6 +75,8 @@ function findMedianSortedArrays3(arr1, arr2) {
         return merged[mid];
     }
 }
+// Pros: Avoids sorting, uses a while loop and two pointers.
+// Cons: Less efficient than the binary search approach, has a time complexity of O(m+n).
 
 // Solution 4: Using a for loop and two pointers
 function findMedianSortedArrays4(arr1, arr2) {
@@ -92,6 +99,8 @@ function findMedianSortedArrays4(arr1, arr2) {
         return merged[mid];
     }
 }
+// Pros: Similar to the while loop approach, uses a for loop.
+// Cons: Less efficient than the binary search approach, has a time complexity of O(m+n).
 
 // Solution 5: Using reduce
 function findMedianSortedArrays5(arr1, arr2) {
@@ -114,3 +123,5 @@ function findMedianSortedArrays5(arr1, arr2) {
         return merged[mid];
     }
 }
+// Pros: Functional approach, uses reduce method.
+// Cons: Less efficient than the binary search approach, has a time complexity of O(m+n).

@@ -8,11 +8,16 @@ function sumArray1(arr) {
   }
   return sum;
 }
+// Pros: Good performance, explicit control over the iteration process.
+// Cons: More verbose than the reduce approach.
 
 // Solution 2: Using reduce
 function sumArray2(arr) {
   return arr.reduce((sum, current) => sum + current, 0);
 }
+// Pros: Concise and readable, functional approach.
+// Cons: May be slightly less performant than a for loop for very large arrays.
+// Recommended: This is generally the recommended approach due to its conciseness and functional style.
 
 // Solution 3: Using forEach
 function sumArray3(arr) {
@@ -22,6 +27,8 @@ function sumArray3(arr) {
     });
     return sum;
 }
+// Pros: Easy to read and understand.
+// Cons: Slightly more verbose than the reduce approach, not as efficient as a for loop.
 
 // Solution 4: Using a while loop
 function sumArray4(arr) {
@@ -33,6 +40,8 @@ function sumArray4(arr) {
     }
     return sum;
 }
+// Pros: Good performance, similar to the for loop approach.
+// Cons: Slightly more verbose than the reduce approach.
 
 // Solution 5: Using recursion
 function sumArray5(arr) {
@@ -41,3 +50,5 @@ function sumArray5(arr) {
     }
     return arr[0] + sumArray5(arr.slice(1));
 }
+// Pros: Elegant and concise for those familiar with recursion.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for large arrays.

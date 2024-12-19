@@ -8,6 +8,9 @@ function fibonacci1(n) {
   }
   return sequence.slice(0, n);
 }
+// Pros: Clear and easy to understand, good performance.
+// Cons: Slightly less concise than some other approaches.
+// Recommended: This is generally the recommended approach due to its clarity and efficiency.
 
 // Solution 2: Using a while loop
 function fibonacci2(n) {
@@ -22,6 +25,8 @@ function fibonacci2(n) {
     }
     return sequence;
 }
+// Pros: Good performance, similar to the for loop approach.
+// Cons: Slightly more verbose than the for loop approach.
 
 // Solution 3: Using recursion
 function fibonacci3(n) {
@@ -37,6 +42,8 @@ function fibonacci3(n) {
     return sequence;
   }
 }
+// Pros: Elegant and concise for those familiar with recursion.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for large numbers.
 
 // Solution 4: Using generator function
 function* fibonacci4() {
@@ -55,6 +62,8 @@ function getFibonacciSequence(n) {
     }
     return sequence;
 }
+// Pros: Memory efficient for very large sequences, can be used to generate infinite sequences.
+// Cons: More complex to understand, requires additional code to use.
 
 // Solution 5: Using array destructuring
 function fibonacci5(n) {
@@ -66,3 +75,5 @@ function fibonacci5(n) {
     }
     return sequence;
 }
+// Pros: Concise and readable, uses array destructuring.
+// Cons: Similar performance to the for loop approach.

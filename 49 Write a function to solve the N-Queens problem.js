@@ -30,6 +30,9 @@ function solveNQueens1(n) {
     solve(0, initialBoard);
     return solutions;
 }
+// Pros: Clear and easy to understand, uses backtracking to find all solutions.
+// Cons: None.
+// Recommended: This is generally the recommended approach due to its clarity and efficiency.
 
 // Solution 2: Using recursion and helper functions
 function solveNQueens2(n) {
@@ -69,6 +72,8 @@ function solveNQueens2(n) {
     solve(0, initialBoard);
     return solutions;
 }
+// Pros: Similar to the first solution, uses helper functions for validation.
+// Cons: Slightly more verbose than the first approach.
 
 // Solution 3: Using a while loop and backtracking
 function solveNQueens3(n) {
@@ -114,6 +119,8 @@ function solveNQueens3(n) {
         return true;
     }
 }
+// Pros: Iterative approach, avoids recursion.
+// Cons: More complex to understand than the recursive approach.
 
 // Solution 4: Using a for loop and backtracking
 function solveNQueens4(n) {
@@ -145,6 +152,8 @@ function solveNQueens4(n) {
     solve(0);
     return solutions;
 }
+// Pros: Similar to the first solution, uses a for loop.
+// Cons: Slightly more verbose than the first approach.
 
 // Solution 5: Using a generator function
 function* solveNQueens5(n) {
@@ -178,3 +187,5 @@ function* solveNQueens5(n) {
 function getAllSolutions(n) {
     return Array.from(solveNQueens5(n));
 }
+// Pros: Memory efficient for very large boards, can be used to generate solutions on demand.
+// Cons: More complex to understand, requires additional code to use.

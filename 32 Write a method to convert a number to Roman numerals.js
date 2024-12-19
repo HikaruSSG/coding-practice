@@ -32,6 +32,9 @@ function toRoman1(num) {
   }
   return roman;
 }
+// Pros: Efficient and easy to understand, uses arrays for storing values.
+// Cons: None.
+// Recommended: This is generally the recommended approach due to its efficiency and clarity.
 
 // Solution 2: Using a while loop and string concatenation
 function toRoman2(num) {
@@ -55,6 +58,8 @@ function toRoman2(num) {
     }
     return roman;
 }
+// Pros: Similar to the array approach, uses an object for storing values.
+// Cons: Slightly more verbose than the array approach.
 
 // Solution 3: Using recursion
 function toRoman3(num) {
@@ -75,6 +80,8 @@ function toRoman3(num) {
         }
     }
 }
+// Pros: Elegant and concise for those familiar with recursion.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for large numbers.
 
 // Solution 4: Using a map
 function toRoman4(num) {
@@ -95,6 +102,8 @@ function toRoman4(num) {
     }
     return roman;
 }
+// Pros: Similar to the array approach, uses a Map for storing values.
+// Cons: Slightly more verbose than the array approach.
 
 // Solution 5: Using reduce
 function toRoman5(num) {
@@ -114,3 +123,5 @@ function toRoman5(num) {
         return roman;
     }, "");
 }
+// Pros: Functional approach, uses reduce method.
+// Cons: Less efficient than the array approach.

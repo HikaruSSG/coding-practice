@@ -16,6 +16,9 @@ function generatePermutations1(str) {
   }
   return permutations;
 }
+// Pros: Clear and easy to understand, uses recursion to generate permutations.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for long strings.
+// Recommended: This is generally the recommended approach due to its clarity and conciseness.
 
 // Solution 2: Using a for loop and splice
 function generatePermutations2(str) {
@@ -39,6 +42,8 @@ function generatePermutations2(str) {
     permute(chars, 0);
     return permutations;
 }
+// Pros: Iterative approach, avoids recursion.
+// Cons: More complex to understand than the recursive approach.
 
 // Solution 3: Using reduce
 function generatePermutations3(str) {
@@ -51,6 +56,8 @@ function generatePermutations3(str) {
         return acc.concat(subPermutations.map(subPermutation => char + subPermutation));
     }, []);
 }
+// Pros: Functional approach, uses reduce and map.
+// Cons: Less efficient than the recursive approach, more complex to understand.
 
 // Solution 4: Using a generator function
 function* generatePermutations4(str) {
@@ -70,6 +77,8 @@ function* generatePermutations4(str) {
 function getAllPermutations(str) {
     return Array.from(generatePermutations4(str));
 }
+// Pros: Memory efficient for very large strings, can be used to generate permutations on demand.
+// Cons: More complex to understand, requires additional code to use.
 
 // Solution 5: Using a while loop and array
 function generatePermutations5(str) {
@@ -98,3 +107,5 @@ function generatePermutations5(str) {
     }
     return permutations;
 }
+// Pros: Iterative approach, avoids recursion.
+// Cons: More complex to understand than the recursive approach.

@@ -30,6 +30,8 @@ function createLRUCache1(capacity) {
         }
     };
 }
+// Pros: Simple and easy to understand, uses a Map for storage and an array for tracking order.
+// Cons: Less efficient for large caches due to array manipulation.
 
 // Solution 2: Using a Map and doubly linked list
 function createLRUCache2(capacity) {
@@ -90,6 +92,9 @@ function createLRUCache2(capacity) {
         }
     };
 }
+// Pros: Efficient, uses a Map for storage and a doubly linked list for maintaining order.
+// Cons: More complex to implement than the array approach.
+// Recommended: This is generally the recommended approach due to its efficiency and ability to maintain order.
 
 // Solution 3: Using an object and array
 function createLRUCache3(capacity) {
@@ -121,6 +126,8 @@ function createLRUCache3(capacity) {
         }
     };
 }
+// Pros: Simple and easy to understand, uses an object for storage and an array for tracking order.
+// Cons: Less efficient for large caches due to array manipulation.
 
 // Solution 4: Using a Map and a while loop
 function createLRUCache4(capacity) {
@@ -148,6 +155,8 @@ function createLRUCache4(capacity) {
         }
     };
 }
+// Pros: Uses a Map for storage, avoids array manipulation.
+// Cons: Less efficient for large caches due to the need to iterate through the map to find the least recently used item.
 
 // Solution 5: Using a Map and forEach
 function createLRUCache5(capacity) {
@@ -179,3 +188,5 @@ function createLRUCache5(capacity) {
         }
     };
 }
+// Pros: Uses a Map for storage, avoids array manipulation.
+// Cons: Less efficient for large caches due to the need to iterate through the map to find the least recently used item.

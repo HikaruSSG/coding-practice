@@ -17,6 +17,8 @@ function rockPaperScissors1(playerChoice) {
     return "You lose!";
   }
 }
+// Pros: Straightforward and easy to understand for simple cases.
+// Cons: Can become verbose and harder to manage with more complex rules.
 
 // Solution 2: Using a switch statement
 function rockPaperScissors2(playerChoice) {
@@ -35,6 +37,8 @@ function rockPaperScissors2(playerChoice) {
             return "Invalid choice";
     }
 }
+// Pros: More structured than if-else for multiple cases.
+// Cons: Still somewhat verbose, can be less flexible than other approaches.
 
 // Solution 3: Using an object literal
 function rockPaperScissors3(playerChoice) {
@@ -59,6 +63,9 @@ function rockPaperScissors3(playerChoice) {
     };
     return outcomes[playerChoice] ? outcomes[playerChoice][computerChoice] : "Invalid choice";
 }
+// Pros: Concise, flexible, and easy to extend with new rules.
+// Cons: Slightly less readable for those unfamiliar with object literals.
+// Recommended: This is generally the recommended approach due to its readability and maintainability.
 
 // Solution 4: Using a map
 function rockPaperScissors4(playerChoice) {
@@ -83,6 +90,8 @@ function rockPaperScissors4(playerChoice) {
     ]);
     return outcomes.get(playerChoice)?.get(computerChoice) || "Invalid choice";
 }
+// Pros: Similar to object literal, but uses a Map.
+// Cons: More verbose than object literal, not as common for this use case.
 
 // Solution 5: Using a function to determine the winner
 function rockPaperScissors5(playerChoice) {
@@ -100,3 +109,5 @@ function rockPaperScissors5(playerChoice) {
     };
     return determineWinner(playerChoice, computerChoice);
 }
+// Pros: Clear and easy to understand, separates the logic for determining the winner.
+// Cons: More verbose than the object literal approach.

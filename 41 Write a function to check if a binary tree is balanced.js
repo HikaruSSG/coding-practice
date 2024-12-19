@@ -23,6 +23,9 @@ function isBalanced1(root) {
     };
     return height(root) !== -1;
 }
+// Pros: Efficient and easy to understand, uses recursion and height calculation.
+// Cons: None.
+// Recommended: This is generally the recommended approach due to its efficiency and clarity.
 
 // Solution 2: Using recursion and a helper function
 function isBalanced2(root) {
@@ -45,6 +48,8 @@ function isBalanced2(root) {
     };
     return checkHeight(root) !== -1;
 }
+// Pros: Similar to the first solution, uses a helper function.
+// Cons: Slightly more verbose than the first solution.
 
 // Solution 3: Using a while loop and a stack
 function isBalanced3(root) {
@@ -78,6 +83,8 @@ function isBalanced3(root) {
     }
     return true;
 }
+// Pros: Iterative approach, avoids recursion.
+// Cons: More complex to understand than the recursive approach, uses extra space for the stack and map.
 
 // Solution 4: Using a for loop and recursion
 function isBalanced4(root) {
@@ -97,6 +104,8 @@ function isBalanced4(root) {
     };
     return getHeight(root) !== -1;
 }
+// Pros: Similar to the first solution, uses a for loop.
+// Cons: Slightly more verbose than the first solution.
 
 // Solution 5: Using a generator function
 function* isBalanced5(root) {
@@ -122,3 +131,5 @@ function checkBalance(root) {
         return value;
     }
 }
+// Pros: Memory efficient for very large trees, can be used to generate values on demand.
+// Cons: More complex to understand, requires additional code to use.

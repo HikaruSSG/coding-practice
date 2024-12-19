@@ -9,6 +9,9 @@ function countWordOccurrences1(str) {
   }
   return wordCounts;
 }
+// Pros: Efficient and simple, uses an object literal to store word counts.
+// Cons: None.
+// Recommended: This is generally the recommended approach due to its efficiency and simplicity.
 
 // Solution 2: Using Map
 function countWordOccurrences2(str) {
@@ -19,6 +22,8 @@ function countWordOccurrences2(str) {
     }
     return Object.fromEntries(wordCounts);
 }
+// Pros: Similar to object literal, but uses a Map.
+// Cons: Slightly more verbose than object literal, requires conversion to object.
 
 // Solution 3: Using reduce
 function countWordOccurrences3(str) {
@@ -27,6 +32,8 @@ function countWordOccurrences3(str) {
         return counts;
     }, {});
 }
+// Pros: Functional approach, concise and readable.
+// Cons: May be slightly less performant than a for loop for very large strings.
 
 // Solution 4: Using forEach
 function countWordOccurrences4(str) {
@@ -36,6 +43,8 @@ function countWordOccurrences4(str) {
     });
     return wordCounts;
 }
+// Pros: Easy to read and understand.
+// Cons: Slightly more verbose than the reduce approach, not as efficient as a for loop.
 
 // Solution 5: Using a for loop
 function countWordOccurrences5(str) {
@@ -47,3 +56,5 @@ function countWordOccurrences5(str) {
     }
     return wordCounts;
 }
+// Pros: Good performance, explicit control over the iteration process.
+// Cons: More verbose than the object literal approach.

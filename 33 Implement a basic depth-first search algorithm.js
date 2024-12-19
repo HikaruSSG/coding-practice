@@ -16,6 +16,9 @@ function dfs1(node, visited = new Set()) {
     dfs1(neighbor, visited);
   }
 }
+// Pros: Clear and easy to understand, uses recursion to traverse the graph.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for very deep graphs.
+// Recommended: This is generally the recommended approach due to its clarity and conciseness.
 
 // Solution 2: Using a stack
 function dfs2(startNode) {
@@ -33,6 +36,8 @@ function dfs2(startNode) {
         }
     }
 }
+// Pros: Iterative approach, avoids recursion.
+// Cons: Slightly more verbose than the recursive approach.
 
 // Solution 3: Using a while loop and recursion
 function dfs3(startNode) {
@@ -51,6 +56,8 @@ function dfs3(startNode) {
         }
     }
 }
+// Pros: Iterative approach, avoids recursion.
+// Cons: Similar to the stack approach, slightly more verbose.
 
 // Solution 4: Using a generator function
 function* dfs4(node, visited = new Set()) {
@@ -69,6 +76,8 @@ function traverseDFS(startNode) {
         console.log(value);
     }
 }
+// Pros: Memory efficient for very large graphs, can be used to generate values on demand.
+// Cons: More complex to understand, requires additional code to use.
 
 // Solution 5: Using a forEach loop and recursion
 function dfs5(node, visited = new Set()) {
@@ -81,3 +90,5 @@ function dfs5(node, visited = new Set()) {
         dfs5(neighbor, visited);
     });
 }
+// Pros: Similar to the recursive approach, uses forEach loop.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for very deep graphs.

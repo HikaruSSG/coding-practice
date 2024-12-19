@@ -19,11 +19,16 @@ function caesarCipher1(str, shift) {
   }
   return result;
 }
+// Pros: Simple and easy to implement, basic substitution cipher.
+// Cons: Very weak encryption, easily breakable.
+// Recommended: This is generally the recommended approach for a simple encryption due to its ease of implementation.
 
 // Solution 2: Reverse string
 function reverseEncryption2(str) {
     return str.split("").reverse().join("");
 }
+// Pros: Very simple to implement.
+// Cons: Not a real encryption method, easily reversible.
 
 // Solution 3: Simple substitution cipher
 function substitutionCipher3(str, key) {
@@ -42,6 +47,8 @@ function substitutionCipher3(str, key) {
     }
     return result;
 }
+// Pros: Slightly more secure than Caesar cipher, uses a key for substitution.
+// Cons: Still relatively weak, vulnerable to frequency analysis.
 
 // Solution 4: XOR cipher
 function xorCipher4(str, key) {
@@ -51,6 +58,8 @@ function xorCipher4(str, key) {
     }
     return result;
 }
+// Pros: Simple and relatively fast, uses bitwise XOR operation.
+// Cons: Vulnerable to known-plaintext attacks, not very secure.
 
 // Solution 5: Atbash cipher
 function atbashCipher5(str) {
@@ -67,3 +76,5 @@ function atbashCipher5(str) {
     }
     return result;
 }
+// Pros: Simple substitution cipher.
+// Cons: Very weak encryption, easily breakable.

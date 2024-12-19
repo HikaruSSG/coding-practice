@@ -6,6 +6,9 @@ function isPerfectSquare1(num) {
   const sqrt = Math.sqrt(num);
   return Number.isInteger(sqrt);
 }
+// Pros: Concise and efficient, leverages built-in JavaScript methods.
+// Cons: None.
+// Recommended: This is generally the recommended approach due to its conciseness and efficiency.
 
 // Solution 2: Using a for loop
 function isPerfectSquare2(num) {
@@ -20,6 +23,8 @@ function isPerfectSquare2(num) {
     }
     return false;
 }
+// Pros: Simple and easy to understand.
+// Cons: Less efficient for large numbers.
 
 // Solution 3: Using binary search
 function isPerfectSquare3(num) {
@@ -39,6 +44,8 @@ function isPerfectSquare3(num) {
     }
     return false;
 }
+// Pros: More efficient than the for loop approach for large numbers.
+// Cons: More complex to understand.
 
 // Solution 4: Using while loop
 function isPerfectSquare4(num) {
@@ -52,6 +59,8 @@ function isPerfectSquare4(num) {
     }
     return false;
 }
+// Pros: Simple and easy to understand.
+// Cons: Less efficient for large numbers.
 
 // Solution 5: Using bit manipulation
 function isPerfectSquare5(num) {
@@ -65,3 +74,5 @@ function isPerfectSquare5(num) {
     }
     return y * y === num;
 }
+// Pros: Efficient, uses bit manipulation.
+// Cons: Less readable than the Math.sqrt approach, more complex to understand.

@@ -19,6 +19,9 @@ function generatePascalsTriangle1(numRows) {
   }
   return triangle;
 }
+// Pros: Efficient and easy to understand, uses nested for loops for iteration.
+// Cons: None.
+// Recommended: This is generally the recommended approach due to its efficiency and clarity.
 
 // Solution 2: Using recursion
 function generatePascalsTriangle2(numRows) {
@@ -41,6 +44,8 @@ function generatePascalsTriangle2(numRows) {
     prevTriangle.push(newRow);
     return prevTriangle;
 }
+// Pros: Elegant and concise for those familiar with recursion.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for large numbers of rows.
 
 // Solution 3: Using map and reduce
 function generatePascalsTriangle3(numRows) {
@@ -59,6 +64,8 @@ function generatePascalsTriangle3(numRows) {
     }
     return triangle;
 }
+// Pros: Functional approach, uses map method.
+// Cons: Less efficient than the nested for loop approach, more complex to understand.
 
 // Solution 4: Using a while loop
 function generatePascalsTriangle4(numRows) {
@@ -83,6 +90,8 @@ function generatePascalsTriangle4(numRows) {
     }
     return triangle;
 }
+// Pros: Similar to the nested for loop approach, uses while loops.
+// Cons: Slightly more verbose than the nested for loop approach.
 
 // Solution 5: Using a for loop and array destructuring
 function generatePascalsTriangle5(numRows) {
@@ -104,3 +113,5 @@ function generatePascalsTriangle5(numRows) {
     }
     return triangle;
 }
+// Pros: Similar to the nested for loop approach, uses array destructuring.
+// Cons: Slightly more verbose than the nested for loop approach.

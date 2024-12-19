@@ -18,6 +18,8 @@ function longestIncreasingSubsequence1(arr) {
     };
     return findLIS(0, -Infinity);
 }
+// Pros: Elegant and concise for those familiar with recursion.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for large arrays.
 
 // Solution 2: Using dynamic programming (tabulation)
 function longestIncreasingSubsequence2(arr) {
@@ -42,6 +44,9 @@ function longestIncreasingSubsequence2(arr) {
     }
     return longest;
 }
+// Pros: Efficient, avoids redundant calculations, good performance.
+// Cons: Slightly more verbose than the recursive approach.
+// Recommended: This is generally the recommended approach due to its efficiency and clarity.
 
 // Solution 3: Using dynamic programming (memoization)
 function longestIncreasingSubsequence3(arr) {
@@ -66,6 +71,8 @@ function longestIncreasingSubsequence3(arr) {
     };
     return findLIS(0, -Infinity);
 }
+// Pros: Efficient, avoids redundant calculations, uses memoization.
+// Cons: Slightly more complex to understand than the tabulation approach.
 
 // Solution 4: Using a while loop and dynamic programming
 function longestIncreasingSubsequence4(arr) {
@@ -96,6 +103,8 @@ function longestIncreasingSubsequence4(arr) {
     }
     return longest;
 }
+// Pros: Similar to the tabulation approach, uses while loops.
+// Cons: Slightly more verbose than the tabulation approach.
 
 // Solution 5: Using a for loop and binary search
 function longestIncreasingSubsequence5(arr) {
@@ -118,3 +127,5 @@ function longestIncreasingSubsequence5(arr) {
     }
     return tails;
 }
+// Pros: Efficient, uses binary search to find the correct position.
+// Cons: Returns the tails array, not the actual subsequence.

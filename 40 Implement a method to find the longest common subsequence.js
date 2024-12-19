@@ -15,6 +15,8 @@ function longestCommonSubsequence1(str1, str2) {
     return lcs1.length > lcs2.length ? lcs1 : lcs2;
   }
 }
+// Pros: Elegant and concise for those familiar with recursion.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for large strings.
 
 // Solution 2: Using dynamic programming (tabulation)
 function longestCommonSubsequence2(str1, str2) {
@@ -32,6 +34,9 @@ function longestCommonSubsequence2(str1, str2) {
     }
     return dp[m][n];
 }
+// Pros: Efficient, avoids redundant calculations, good performance.
+// Cons: Slightly more verbose than the recursive approach.
+// Recommended: This is generally the recommended approach due to its efficiency and clarity.
 
 // Solution 3: Using dynamic programming (memoization)
 function longestCommonSubsequence3(str1, str2) {
@@ -54,6 +59,8 @@ function longestCommonSubsequence3(str1, str2) {
     };
     return lcs(str1.length, str2.length);
 }
+// Pros: Efficient, avoids redundant calculations, uses memoization.
+// Cons: Slightly more complex to understand than the tabulation approach.
 
 // Solution 4: Using a while loop and recursion
 function longestCommonSubsequence4(str1, str2) {
@@ -78,6 +85,8 @@ function longestCommonSubsequence4(str1, str2) {
     };
     return lcs(m, n);
 }
+// Pros: Similar to the memoization approach, uses a while loop.
+// Cons: Slightly more verbose than the memoization approach.
 
 // Solution 5: Using a for loop and dynamic programming
 function longestCommonSubsequence5(str1, str2) {
@@ -97,3 +106,5 @@ function longestCommonSubsequence5(str1, str2) {
     }
     return dp[m][n];
 }
+// Pros: Efficient, avoids redundant calculations, good performance.
+// Cons: Similar to the tabulation approach, uses a for loop.

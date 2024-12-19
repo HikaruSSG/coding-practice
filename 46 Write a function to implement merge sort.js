@@ -26,6 +26,9 @@ function mergeSort1(arr) {
     return result.concat(left.slice(i)).concat(right.slice(j));
   }
 }
+// Pros: Efficient and easy to understand, uses recursion for sorting.
+// Cons: None.
+// Recommended: This is generally the recommended approach due to its efficiency and clarity.
 
 // Solution 2: Using a while loop and recursion
 function mergeSort2(arr) {
@@ -61,6 +64,8 @@ function mergeSort2(arr) {
         return result;
     }
 }
+// Pros: Similar to the recursive approach, uses a while loop for merging.
+// Cons: Slightly more verbose than the recursive approach.
 
 // Solution 3: Using a for loop and recursion
 function mergeSort3(arr) {
@@ -88,6 +93,8 @@ function mergeSort3(arr) {
         return result;
     }
 }
+// Pros: Similar to the recursive approach, uses a for loop for merging.
+// Cons: Slightly more verbose than the recursive approach.
 
 // Solution 4: Using a generator function
 function* mergeSort4(arr) {
@@ -126,6 +133,8 @@ function* mergeSort4(arr) {
 function sortArray(arr) {
     return Array.from(mergeSort4(arr));
 }
+// Pros: Memory efficient for very large arrays, can be used to generate values on demand.
+// Cons: More complex to understand, requires additional code to use.
 
 // Solution 5: Using reduce
 function mergeSort5(arr) {
@@ -152,3 +161,5 @@ function mergeSort5(arr) {
         }, []);
     }
 }
+// Pros: Functional approach, uses reduce method.
+// Cons: Less efficient than the recursive approach, more complex to understand.

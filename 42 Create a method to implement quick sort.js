@@ -17,6 +17,8 @@ function quickSort1(arr) {
   }
   return [...quickSort1(left), pivot, ...quickSort1(right)];
 }
+// Pros: Simple and easy to understand, uses recursion.
+// Cons: Not in-place, creates new arrays, less efficient for large arrays.
 
 // Solution 2: In-place quick sort
 function quickSort2(arr, left = 0, right = arr.length - 1) {
@@ -40,6 +42,9 @@ function quickSort2(arr, left = 0, right = arr.length - 1) {
         return i + 1;
     }
 }
+// Pros: Efficient, in-place sorting, good performance.
+// Cons: Slightly more complex to understand than the first approach.
+// Recommended: This is generally the recommended approach due to its efficiency and minimal space complexity.
 
 // Solution 3: Using a while loop and recursion
 function quickSort3(arr) {
@@ -70,6 +75,8 @@ function quickSort3(arr) {
         return i + 1;
     }
 }
+// Pros: Iterative approach, avoids recursion.
+// Cons: More complex to understand than the recursive approach, uses extra space for the stack.
 
 // Solution 4: Using a for loop and recursion
 function quickSort4(arr) {
@@ -88,6 +95,8 @@ function quickSort4(arr) {
     }
     return [...quickSort4(left), pivot, ...quickSort4(right)];
 }
+// Pros: Similar to the first solution, uses a for loop.
+// Cons: Not in-place, creates new arrays, less efficient for large arrays.
 
 // Solution 5: Using a generator function
 function* quickSort5(arr) {
@@ -113,3 +122,5 @@ function* quickSort5(arr) {
 function sortArray(arr) {
     return Array.from(quickSort5(arr));
 }
+// Pros: Memory efficient for very large arrays, can be used to generate values on demand.
+// Cons: More complex to understand, requires additional code to use.

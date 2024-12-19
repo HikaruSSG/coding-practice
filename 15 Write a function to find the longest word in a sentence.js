@@ -11,6 +11,8 @@ function findLongestWord1(sentence) {
   }
   return longestWord;
 }
+// Pros: Good performance, explicit control over the iteration process.
+// Cons: More verbose than the reduce approach.
 
 // Solution 2: Using reduce
 function findLongestWord2(sentence) {
@@ -18,6 +20,9 @@ function findLongestWord2(sentence) {
     return current.length > longest.length ? current : longest;
   }, "");
 }
+// Pros: Concise and readable, functional approach.
+// Cons: May be slightly less performant than a for loop for very large sentences.
+// Recommended: This is generally the recommended approach due to its conciseness and functional style.
 
 // Solution 3: Using sort
 function findLongestWord3(sentence) {
@@ -25,6 +30,8 @@ function findLongestWord3(sentence) {
     words.sort((a, b) => b.length - a.length);
     return words[0];
 }
+// Pros: Concise, uses the sort method.
+// Cons: Less efficient than the reduce approach, modifies the original array.
 
 // Solution 4: Using forEach
 function findLongestWord4(sentence) {
@@ -36,6 +43,8 @@ function findLongestWord4(sentence) {
     });
     return longestWord;
 }
+// Pros: Easy to read and understand.
+// Cons: Slightly more verbose than the reduce approach, not as efficient as a for loop.
 
 // Solution 5: Using a while loop
 function findLongestWord5(sentence) {
@@ -50,3 +59,5 @@ function findLongestWord5(sentence) {
     }
     return longestWord;
 }
+// Pros: Good performance, similar to the for loop approach.
+// Cons: Slightly more verbose than the reduce approach.

@@ -53,6 +53,8 @@ function createMinHeap1() {
         isEmpty: () => heap.length === 0
     };
 }
+// Pros: Simple and easy to understand, uses an array and methods to implement a min heap.
+// Cons: Less structured than the class approach.
 
 // Solution 2: Using an array and methods (max heap)
 function createMaxHeap2() {
@@ -107,6 +109,8 @@ function createMaxHeap2() {
         isEmpty: () => heap.length === 0
     };
 }
+// Pros: Simple and easy to understand, uses an array and methods to implement a max heap.
+// Cons: Less structured than the class approach.
 
 // Solution 3: Using a class (min heap)
 class MinHeap3 {
@@ -191,6 +195,9 @@ class MinHeap3 {
 function createMinHeap3() {
     return new MinHeap3();
 }
+// Pros: More structured and maintainable, uses a class for encapsulation.
+// Cons: Slightly more verbose than the object literal approach.
+// Recommended: This is generally the recommended approach due to its structure and maintainability.
 
 // Solution 4: Using a class (max heap)
 class MaxHeap4 {
@@ -275,6 +282,8 @@ class MaxHeap4 {
 function createMaxHeap4() {
     return new MaxHeap4();
 }
+// Pros: More structured and maintainable, uses a class for encapsulation.
+// Cons: Slightly more verbose than the object literal approach.
 
 // Solution 5: Using closures (min heap)
 function createMinHeap5() {
@@ -329,3 +338,5 @@ function createMinHeap5() {
         isEmpty: () => heap.length === 0
     };
 }
+// Pros: Uses closures to encapsulate the heap array.
+// Cons: Less structured than the class approach.

@@ -6,6 +6,9 @@ function isPalindrome1(str) {
   const reversedStr = cleanStr.split('').reverse().join('');
   return cleanStr === reversedStr;
 }
+// Pros: Concise and easy to read, leverages built-in JavaScript methods. Handles non-alphanumeric characters.
+// Cons: May be slightly less performant than manual methods for very large strings due to overhead of multiple method calls.
+// Recommended: This is generally the recommended approach due to its readability and conciseness. It also handles non-alphanumeric characters which is often desired. Performance differences are usually negligible for most use cases.
 
 // Solution 2: Using a for loop
 function isPalindrome2(str) {
@@ -17,6 +20,8 @@ function isPalindrome2(str) {
   }
   return true;
 }
+// Pros: Good performance, explicit control over the iteration process.
+// Cons: More verbose than the built-in method approach, does not handle non-alphanumeric characters.
 
 // Solution 3: Using recursion
 function isPalindrome3(str) {
@@ -28,6 +33,8 @@ function isPalindrome3(str) {
   }
   return isPalindrome3(str.slice(1, -1));
 }
+// Pros: Elegant and concise for those familiar with recursion.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for very long strings, does not handle non-alphanumeric characters.
 
 // Solution 4: Using two pointers
 function isPalindrome4(str) {
@@ -42,6 +49,8 @@ function isPalindrome4(str) {
     }
     return true;
 }
+// Pros: Good performance, clear and easy to understand.
+// Cons: Does not handle non-alphanumeric characters.
 
 // Solution 5: Using every
 function isPalindrome5(str) {
@@ -49,3 +58,5 @@ function isPalindrome5(str) {
         return char === str[str.length - 1 - i];
     });
 }
+// Pros: Functional approach, concise and readable.
+// Cons: May be slightly less performant than a for loop for very large strings, does not handle non-alphanumeric characters.

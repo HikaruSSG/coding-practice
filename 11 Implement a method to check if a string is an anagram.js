@@ -6,6 +6,8 @@ function isAnagram1(str1, str2) {
   const sortedStr2 = str2.split("").sort().join("");
   return sortedStr1 === sortedStr2;
 }
+// Pros: Concise and easy to understand.
+// Cons: Less efficient due to sorting, especially for long strings.
 
 // Solution 2: Using character counts
 function isAnagram2(str1, str2) {
@@ -24,6 +26,9 @@ function isAnagram2(str1, str2) {
     }
     return true;
 }
+// Pros: Efficient, avoids sorting, good performance.
+// Cons: Slightly more verbose than the sort approach.
+// Recommended: This is generally the recommended approach due to its efficiency and clarity.
 
 // Solution 3: Using Map
 function isAnagram3(str1, str2) {
@@ -48,6 +53,8 @@ function isAnagram3(str1, str2) {
     }
     return true;
 }
+// Pros: Similar to character counts, uses Map for character storage.
+// Cons: More verbose than the character counts approach.
 
 // Solution 4: Using filter and includes
 function isAnagram4(str1, str2) {
@@ -66,6 +73,8 @@ function isAnagram4(str1, str2) {
     }
     return arr2.length === 0;
 }
+// Pros: Avoids sorting and character counting.
+// Cons: Less efficient due to array manipulation, more complex to understand.
 
 // Solution 5: Using reduce
 function isAnagram5(str1, str2) {
@@ -84,3 +93,5 @@ function isAnagram5(str1, str2) {
         return true;
     });
 }
+// Pros: Functional approach, uses reduce and every.
+// Cons: Less efficient than the character counts approach, more complex to understand.

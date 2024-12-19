@@ -10,6 +10,8 @@ function isPrime1(num) {
   }
   return true;
 }
+// Pros: Simple and easy to understand.
+// Cons: Can be less efficient for large numbers.
 
 // Solution 2: Using a while loop
 function isPrime2(num) {
@@ -23,6 +25,8 @@ function isPrime2(num) {
     }
     return true;
 }
+// Pros: Similar to the for loop approach.
+// Cons: Can be less efficient for large numbers.
 
 // Solution 3: Using recursion
 function isPrime3(num, divisor = 2) {
@@ -31,6 +35,8 @@ function isPrime3(num, divisor = 2) {
     if (num % divisor === 0) return false;
     return isPrime3(num, divisor + 1);
 }
+// Pros: Elegant and concise for those familiar with recursion.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for large numbers.
 
 // Solution 4: Optimized for loop
 function isPrime4(num) {
@@ -44,6 +50,9 @@ function isPrime4(num) {
     }
     return true;
 }
+// Pros: More efficient than the basic for loop, optimized for performance.
+// Cons: Slightly more complex to understand.
+// Recommended: This is generally the recommended approach due to its efficiency.
 
 // Solution 5: Using Array.every
 function isPrime5(num) {
@@ -54,3 +63,5 @@ function isPrime5(num) {
         return num % divisor !== 0;
     });
 }
+// Pros: Functional approach, concise and readable.
+// Cons: Less performant than the optimized for loop, more complex to understand.

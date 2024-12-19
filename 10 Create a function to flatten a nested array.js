@@ -12,6 +12,8 @@ function flatten1(arr) {
   }
   return flattened;
 }
+// Pros: Easy to understand, explicit control over the flattening process.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for deeply nested arrays.
 
 // Solution 2: Using reduce
 function flatten2(arr) {
@@ -19,11 +21,16 @@ function flatten2(arr) {
     return flat.concat(Array.isArray(current) ? flatten2(current) : current);
   }, []);
 }
+// Pros: Functional approach, concise and readable.
+// Cons: Can be less performant due to function call overhead, may cause stack overflow for deeply nested arrays.
 
 // Solution 3: Using flat() method
 function flatten3(arr) {
     return arr.flat(Infinity);
 }
+// Pros: Concise and efficient, leverages built-in JavaScript method.
+// Cons: May not be supported in older browsers.
+// Recommended: This is generally the recommended approach due to its conciseness and efficiency.
 
 // Solution 4: Using a while loop and shift
 function flatten4(arr) {
@@ -39,6 +46,8 @@ function flatten4(arr) {
     }
     return flattened;
 }
+// Pros: Iterative approach, avoids recursion.
+// Cons: More verbose than the flat() method, can be less efficient.
 
 // Solution 5: Using a for loop and splice
 function flatten5(arr) {
@@ -50,3 +59,5 @@ function flatten5(arr) {
     }
     return arr;
 }
+// Pros: In-place flattening, avoids creating new arrays.
+// Cons: Modifies the original array, can be less efficient, more complex to understand.

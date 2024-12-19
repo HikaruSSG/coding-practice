@@ -6,6 +6,9 @@ function rotateArray1(arr, k) {
   k = k % n;
   return arr.slice(k).concat(arr.slice(0, k));
 }
+// Pros: Concise and easy to read, uses built-in JavaScript methods.
+// Cons: Creates new arrays, may be less performant for very large arrays.
+// Recommended: This is generally the recommended approach due to its conciseness and readability.
 
 // Solution 2: Using a for loop and push/shift
 function rotateArray2(arr, k) {
@@ -16,6 +19,8 @@ function rotateArray2(arr, k) {
     }
     return arr;
 }
+// Pros: In-place rotation, avoids creating new arrays.
+// Cons: Less efficient due to shift operation, modifies the original array.
 
 // Solution 3: Using splice
 function rotateArray3(arr, k) {
@@ -24,6 +29,8 @@ function rotateArray3(arr, k) {
     arr.splice(0, 0, ...arr.splice(n - k, k));
     return arr;
 }
+// Pros: In-place rotation, avoids creating new arrays.
+// Cons: Less readable, modifies the original array.
 
 // Solution 4: Using reverse
 function rotateArray4(arr, k) {
@@ -42,6 +49,8 @@ function rotateArray4(arr, k) {
         }
     }
 }
+// Pros: In-place rotation, efficient for large arrays.
+// Cons: More complex to understand than the slice and concat approach.
 
 // Solution 5: Using a while loop and temp variable
 function rotateArray5(arr, k) {
@@ -60,3 +69,5 @@ function rotateArray5(arr, k) {
     }
     return arr;
 }
+// Pros: In-place rotation, avoids creating new arrays.
+// Cons: Less efficient than the reverse approach, modifies the original array.

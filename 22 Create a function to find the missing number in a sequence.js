@@ -7,6 +7,9 @@ function findMissingNumber1(arr) {
   const actualSum = arr.reduce((sum, num) => sum + num, 0);
   return expectedSum - actualSum;
 }
+// Pros: Efficient and simple, uses the sum of numbers formula.
+// Cons: May not work if the sequence is not consecutive or if there are duplicates.
+// Recommended: This is generally the recommended approach due to its efficiency and simplicity.
 
 // Solution 2: Using XOR
 function findMissingNumber2(arr) {
@@ -19,6 +22,8 @@ function findMissingNumber2(arr) {
     }
     return xorSum;
 }
+// Pros: Efficient, uses bitwise XOR operation.
+// Cons: Less readable than the sum of numbers formula approach.
 
 // Solution 3: Using a for loop and comparison
 function findMissingNumber3(arr) {
@@ -30,6 +35,8 @@ function findMissingNumber3(arr) {
     }
     return sortedArr.length + 1;
 }
+// Pros: Simple and easy to understand.
+// Cons: Less efficient due to sorting, modifies the original array.
 
 // Solution 4: Using a while loop
 function findMissingNumber4(arr) {
@@ -43,6 +50,8 @@ function findMissingNumber4(arr) {
     }
     return i;
 }
+// Pros: Similar to the for loop approach.
+// Cons: Less efficient due to sorting, modifies the original array.
 
 // Solution 5: Using a Set
 function findMissingNumber5(arr) {
@@ -53,3 +62,5 @@ function findMissingNumber5(arr) {
         }
     }
 }
+// Pros: Uses a Set to check for missing numbers.
+// Cons: Less efficient than the sum of numbers formula approach.
