@@ -1,4 +1,4 @@
-﻿﻿# Coding Practices for JavaScript.
+﻿﻿# **Coding Practices for JavaScript.**
 
 **1. Write a function to reverse a string** - This file contains multiple JavaScript functions to reverse a string using different approaches: built-in methods, a for loop, recursion, reduce, and a while loop.
 
