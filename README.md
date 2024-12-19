@@ -1,4 +1,4 @@
-﻿﻿# **Coding Practices for JavaScript**
+﻿﻿﻿﻿# **Coding Practices for JavaScript**
 
 ## **1. Write a function to reverse a string**
 This file contains multiple JavaScript functions to reverse a string using different approaches: built-in methods, a for loop, recursion, reduce, and a while loop.
@@ -21,7 +21,8 @@ This file contains multiple JavaScript functions to calculate the sum of all num
 ## **7. Create a function to check if a number is prime**
 This file contains multiple JavaScript functions to check if a number is prime using different approaches: a for loop, a while loop, recursion, an optimized for loop, and Array.every.
 
-**8. Implement a basic calculator with +, -, *, / operations***
+**8. Implement a basic calculator with +, -, *, / operations**
+This file contains multiple JavaScript functions to implement a basic calculator with +, -, *, / operations using if-else statements, a switch statement, an object literal, eval, and a function that returns a function.
 
 ## **9. Write a function to remove duplicates from an array**
 This file contains multiple JavaScript functions to remove duplicates from an array using different approaches: Set, filter, a for loop, reduce, and a Map.
