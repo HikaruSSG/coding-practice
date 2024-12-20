@@ -4,11 +4,20 @@
   "description": "## **1. Write a function to reverse a string** This file contains multiple JavaScript functions to reverse a string using different approaches: built-in methods, a for loop, recursion, reduce, and a while loop.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.17.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.14.0"
   }
 }

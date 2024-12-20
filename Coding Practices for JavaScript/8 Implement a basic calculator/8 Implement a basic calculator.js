@@ -17,7 +17,6 @@ function calculate1(num1, num2, operator) {
 }
 // Pros: Simple and easy to understand.
 // Cons: Can become verbose and harder to manage with more operations, not easily extensible.
-// Recommended: Use for simple calculators with a limited number of operations.
 
 // Solution 2: Using switch statement
 function calculate2(num1, num2, operator) {
@@ -39,7 +38,6 @@ function calculate2(num1, num2, operator) {
 }
 // Pros: More concise than if-else statements for multiple cases, easier to read and maintain than nested if-else statements.
 // Cons: Can still become verbose with many cases, not as flexible as other approaches.
-// Recommended: Use for calculators with a moderate number of operations.
 
 // Solution 3: Using an object literal for operations
 const operations = {
@@ -62,7 +60,7 @@ function calculate3(num1, num2, operator) {
 }
 // Pros: Very flexible and extensible, easy to add new operations, clean and maintainable code.
 // Cons: Slightly more complex than if-else or switch statements.
-// Recommended: Use for calculators with a large number of operations or when extensibility is important.
+// Recommended: This solution is the most flexible and maintainable due to its use of an object literal for operations. It's easy to add new operations without modifying the core logic.
 
 // Solution 4: Using eval (not recommended for production)
 function calculate4(num1, num2, operator) {
@@ -74,7 +72,6 @@ function calculate4(num1, num2, operator) {
 }
 // Pros: Very concise and simple.
 // Cons: Security risk, not recommended for production use, can be difficult to debug.
-// Recommended: Avoid using eval() in production code. Use only for quick prototyping or testing.
 
 // Solution 5: Using a function that returns a function
 function createCalculator(operator) {
@@ -102,6 +99,5 @@ function calculate5(num1, num2, operator) {
 }
 // Pros: Demonstrates the use of closures and higher-order functions, can be useful for creating more complex calculators.
 // Cons: More complex than other solutions, may not be necessary for a simple calculator.
-// Recommended: Use when you need to create a calculator with more complex behavior or when you want to demonstrate the use of closures.
 
 const operator = ['+', '-', '*', '/'];
