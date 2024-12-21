@@ -66,3 +66,4 @@ function mergeSortedArrays5(arr1, arr2) {
         return merged;
     }, []);
 }
+export { mergeSortedArrays1, mergeSortedArrays2, mergeSortedArrays3, mergeSortedArrays4, mergeSortedArrays5 };

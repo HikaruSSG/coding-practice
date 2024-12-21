@@ -206,3 +206,4 @@ function isValidSudoku5(board) {
 }
 // Pros: Uses reduce for iteration.
 // Cons: Less efficient than the nested for loop approach.
+export { isValidSudoku1, isValidSudoku2, isValidSudoku3, isValidSudoku4, isValidSudoku5 };

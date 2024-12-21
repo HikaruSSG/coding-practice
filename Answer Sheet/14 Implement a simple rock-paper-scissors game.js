@@ -89,3 +89,4 @@ function rockPaperScissors5(playerChoice) {
     };
     return determineWinner(playerChoice, computerChoice);
 }
+export { rockPaperScissors1, rockPaperScissors2, rockPaperScissors3, rockPaperScissors4, rockPaperScissors5 };

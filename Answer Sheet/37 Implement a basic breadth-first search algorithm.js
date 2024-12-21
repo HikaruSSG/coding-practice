@@ -85,3 +85,4 @@ function traverseBFS(startNode) {
         console.log(value);
     }
 }
+export { createGraphNode, bfs1, bfs2, bfs3, bfs4, bfs5, traverseBFS };

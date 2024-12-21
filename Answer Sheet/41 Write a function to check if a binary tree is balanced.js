@@ -108,3 +108,4 @@ function checkBalance(root) {
         return value;
     }
 }
+export { createTreeNode, isBalanced1, isBalanced2, isBalanced3, isBalanced4, isBalanced5, checkBalance };

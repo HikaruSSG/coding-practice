@@ -101,3 +101,4 @@ function factorial4(n) {
 function factorial5(n) {
     return n === 0 ? 1 : n * factorial5(n - 1);
 }
+export { calculate1, calculate2, calculate3, calculate4, calculate5, factorial1, factorial2, factorial3, factorial4, factorial5 };

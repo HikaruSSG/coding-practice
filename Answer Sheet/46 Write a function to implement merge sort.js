@@ -163,3 +163,4 @@ function mergeSort5(arr) {
 }
 // Pros: Functional approach, uses reduce method.
 // Cons: Less efficient than the recursive approach, more complex to understand.
+export { mergeSort1, mergeSort2, mergeSort3, mergeSort4, sortArray, mergeSort5 };

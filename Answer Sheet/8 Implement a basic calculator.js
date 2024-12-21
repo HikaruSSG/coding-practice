@@ -78,3 +78,4 @@ function calculate5(num1, num2, operator) {
     return calculator(num1, num2);
 }
 const operator = ['+', '-', '*', '/'];
+export { calculate1, calculate2, calculate3, calculate4, calculate5, createCalculator };

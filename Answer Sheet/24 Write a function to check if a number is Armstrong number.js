@@ -42,3 +42,4 @@ function isArmstrong5(num) {
     });
     return sum === num;
 }
+export { isArmstrong1, isArmstrong2, isArmstrong3, isArmstrong4, isArmstrong5 };

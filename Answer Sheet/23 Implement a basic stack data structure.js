@@ -100,3 +100,4 @@ function createStack5() {
         }
     };
 }
+export { createStack1, createStack2, createStack3, createStack4, createStack5 };

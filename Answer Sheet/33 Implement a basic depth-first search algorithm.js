@@ -67,3 +67,4 @@ function dfs5(node, visited = new Set()) {
         dfs5(neighbor, visited);
     });
 }
+export { createGraphNode, dfs1, dfs2, dfs3, dfs4, traverseDFS, dfs5 };

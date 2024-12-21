@@ -27,3 +27,4 @@ function reverseString5(str) {
   }
   return reversed;
 }
+export { reverseString1, reverseString2, reverseString3, reverseString4, reverseString5 };

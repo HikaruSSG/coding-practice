@@ -68,3 +68,4 @@ function hasCycle5(head) {
     }
     return false;
 }
+export { createNode, hasCycle1, hasCycle2, hasCycle3, hasCycle4, hasCycle5 };

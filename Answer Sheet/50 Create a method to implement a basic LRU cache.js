@@ -190,3 +190,4 @@ function createLRUCache5(capacity) {
 }
 // Pros: Uses a Map for storage, avoids array manipulation.
 // Cons: Less efficient for large caches due to the need to iterate through the map to find the least recently used item.
+export { createLRUCache1, createLRUCache2, createLRUCache3, createLRUCache4, createLRUCache5 };

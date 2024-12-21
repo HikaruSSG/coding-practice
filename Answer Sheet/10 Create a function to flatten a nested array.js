@@ -39,3 +39,4 @@ function flatten5(arr) {
     }
     return arr;
 }
+export { flatten1, flatten2, flatten3, flatten4, flatten5 };

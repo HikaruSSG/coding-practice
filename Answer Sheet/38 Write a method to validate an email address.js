@@ -60,3 +60,4 @@ function validateEmail5(email) {
     }
     return true;
 }
+export { validateEmail1, validateEmail2, validateEmail3, validateEmail4, validateEmail5 };

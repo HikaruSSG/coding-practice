@@ -156,3 +156,4 @@ function isOneEditAway5(str1, str2) {
     }
     return edits + remaining <= 1;
 }
+export { isOneEditAway1, isOneEditAway2, isOneEditAway3, isOneEditAway4, isOneEditAway5 };

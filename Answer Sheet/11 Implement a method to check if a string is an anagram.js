@@ -73,3 +73,4 @@ function isAnagram5(str1, str2) {
         return true;
     });
 }
+export { isAnagram1, isAnagram2, isAnagram3, isAnagram4, isAnagram5 };

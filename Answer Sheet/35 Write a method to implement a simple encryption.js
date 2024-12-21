@@ -56,3 +56,4 @@ function atbashCipher5(str) {
     }
     return result;
 }
+export { caesarCipher1, reverseEncryption2, substitutionCipher3, xorCipher4, atbashCipher5 };

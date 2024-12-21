@@ -90,3 +90,4 @@ function isBalanced5(str) {
     }
     return stack.length === 0;
 }
+export { isBalanced1, isBalanced2, isBalanced3, isBalanced4, isBalanced5 };

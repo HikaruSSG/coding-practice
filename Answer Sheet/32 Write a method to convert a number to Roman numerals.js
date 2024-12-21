@@ -103,3 +103,4 @@ function toRoman5(num) {
         return roman;
     }, "");
 }
+export { toRoman1, toRoman2, toRoman3, toRoman4, toRoman5 };

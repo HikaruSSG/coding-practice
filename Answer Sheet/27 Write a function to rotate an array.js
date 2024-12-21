@@ -49,3 +49,4 @@ function rotateArray5(arr, k) {
     }
     return arr;
 }
+export { rotateArray1, rotateArray2, rotateArray3, rotateArray4, rotateArray5 };

@@ -101,3 +101,4 @@ function* quickSort5(arr) {
 function sortArray(arr) {
     return Array.from(quickSort5(arr));
 }
+export { quickSort1, quickSort2, quickSort3, quickSort4, quickSort5, sortArray };

@@ -72,3 +72,4 @@ function binarySearch5(arr, target) {
     } while (left <= right);
     return -1;
 }
+export { binarySearch1, binarySearch2, binarySearch3, binarySearch4, binarySearch5 };

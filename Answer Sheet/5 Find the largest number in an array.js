@@ -38,3 +38,4 @@ function findLargest5(arr) {
     }
     return largest;
 }
+export { findLargest1, findLargest2, findLargest3, findLargest4, findLargest5 };

@@ -43,3 +43,4 @@ function isPrime5(num) {
         return num % divisor !== 0;
     });
 }
+export { isPrime1, isPrime2, isPrime3, isPrime4, isPrime5 };

@@ -43,3 +43,4 @@ function decimalToBinary5(decimal) {
     }
     return binaryArray.join('');
 }
+export { decimalToBinary1, decimalToBinary2, decimalToBinary3, decimalToBinary4, decimalToBinary5 };

@@ -86,3 +86,4 @@ function generatePermutations5(str) {
     }
     return permutations;
 }
+export { generatePermutations1, generatePermutations2, generatePermutations3, generatePermutations4, getAllPermutations, generatePermutations5 };

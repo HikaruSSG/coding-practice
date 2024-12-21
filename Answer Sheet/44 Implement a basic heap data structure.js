@@ -340,3 +340,4 @@ function createMinHeap5() {
 }
 // Pros: Uses closures to encapsulate the heap array.
 // Cons: Less structured than the class approach.
+export { createMinHeap1, createMaxHeap2, createMinHeap3, createMaxHeap4, createMinHeap5 };

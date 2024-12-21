@@ -86,3 +86,4 @@ function findKthSmallest5(arr, k) {
     }
     return tempArr[minIndex];
 }
+export { findKthSmallest1, findKthSmallest2, findKthSmallest3, findKthSmallest4, findKthSmallest5 };

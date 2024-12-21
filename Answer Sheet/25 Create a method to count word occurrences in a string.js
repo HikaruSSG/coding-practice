@@ -36,3 +36,4 @@ function countWordOccurrences5(str) {
     }
     return wordCounts;
 }
+export { countWordOccurrences1, countWordOccurrences2, countWordOccurrences3, countWordOccurrences4, countWordOccurrences5 };

@@ -55,3 +55,4 @@ function fibonacci5(n) {
     }
     return sequence;
 }
+export { fibonacci1, fibonacci2, fibonacci3, fibonacci4, getFibonacciSequence, fibonacci5 };

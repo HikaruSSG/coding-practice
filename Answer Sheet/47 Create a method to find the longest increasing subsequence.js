@@ -129,3 +129,4 @@ function longestIncreasingSubsequence5(arr) {
 }
 // Pros: Efficient, uses binary search to find the correct position.
 // Cons: Returns the tails array, not the actual subsequence.
+export { longestIncreasingSubsequence1, longestIncreasingSubsequence2, longestIncreasingSubsequence3, longestIncreasingSubsequence4, longestIncreasingSubsequence5 };

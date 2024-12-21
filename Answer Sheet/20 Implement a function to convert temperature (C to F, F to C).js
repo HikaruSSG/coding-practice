@@ -36,3 +36,4 @@ function convertTemperature5(temp, unit) {
            unit === "FtoC" ? ((temp - 32) * 5) / 9 :
            "Invalid unit";
 }
+export { convertTemperature1, convertTemperature2, convertTemperature3, convertTemperature4, convertTemperature5 };

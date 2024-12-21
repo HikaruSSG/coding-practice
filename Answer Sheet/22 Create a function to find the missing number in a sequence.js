@@ -42,3 +42,4 @@ function findMissingNumber5(arr) {
         }
     }
 }
+export { findMissingNumber1, findMissingNumber2, findMissingNumber3, findMissingNumber4, findMissingNumber5 };

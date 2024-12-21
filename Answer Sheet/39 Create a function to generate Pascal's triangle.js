@@ -93,3 +93,4 @@ function generatePascalsTriangle5(numRows) {
     }
     return triangle;
 }
+export { generatePascalsTriangle1, generatePascalsTriangle2, generatePascalsTriangle3, generatePascalsTriangle4, generatePascalsTriangle5 };

@@ -111,3 +111,4 @@ function createQueue5() {
         }
     };
 }
+export { createQueue1, createQueue2, createQueue3, createQueue4, createQueue5 };

@@ -103,3 +103,4 @@ function findMedianSortedArrays5(arr1, arr2) {
         return merged[mid];
     }
 }
+export { findMedianSortedArrays1, findMedianSortedArrays2, findMedianSortedArrays3, findMedianSortedArrays4, findMedianSortedArrays5 };

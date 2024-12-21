@@ -77,3 +77,4 @@ function quickSort5(arr) {
     }
     return [...quickSort5(left), pivot, ...quickSort5(right)];
 }
+export { bubbleSort1, insertionSort2, selectionSort3, mergeSort4, quickSort5 };

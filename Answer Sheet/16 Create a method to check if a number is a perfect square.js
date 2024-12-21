@@ -54,3 +54,4 @@ function isPerfectSquare5(num) {
     }
     return y * y === num;
 }
+export { isPerfectSquare1, isPerfectSquare2, isPerfectSquare3, isPerfectSquare4, isPerfectSquare5 };

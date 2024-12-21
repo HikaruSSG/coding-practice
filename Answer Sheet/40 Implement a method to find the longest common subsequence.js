@@ -86,3 +86,4 @@ function longestCommonSubsequence5(str1, str2) {
     }
     return dp[m][n];
 }
+export { longestCommonSubsequence1, longestCommonSubsequence2, longestCommonSubsequence3, longestCommonSubsequence4, longestCommonSubsequence5 };

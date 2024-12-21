@@ -189,3 +189,4 @@ function getAllSolutions(n) {
 }
 // Pros: Memory efficient for very large boards, can be used to generate solutions on demand.
 // Cons: More complex to understand, requires additional code to use.
+export { solveNQueens1, solveNQueens2, solveNQueens3, solveNQueens4, solveNQueens5, getAllSolutions };

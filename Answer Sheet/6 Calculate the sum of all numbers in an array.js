@@ -30,3 +30,4 @@ function sumArray5(arr) {
     }
     return arr[0] + sumArray5(arr.slice(1));
 }
+export { sumArray1, sumArray2, sumArray3, sumArray4, sumArray5 };

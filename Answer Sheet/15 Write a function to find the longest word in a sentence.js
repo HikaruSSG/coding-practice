@@ -39,3 +39,4 @@ function findLongestWord5(sentence) {
     }
     return longestWord;
 }
+export { findLongestWord1, findLongestWord2, findLongestWord3, findLongestWord4, findLongestWord5 };

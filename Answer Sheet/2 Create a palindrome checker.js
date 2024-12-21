@@ -38,3 +38,4 @@ function isPalindrome5(str) {
         return char === str[str.length - 1 - i];
     });
 }
+export { isPalindrome1, isPalindrome2, isPalindrome3, isPalindrome4, isPalindrome5 };

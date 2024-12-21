@@ -52,3 +52,4 @@ function findFirstNonRepeating5(str) {
     }
     return undefined;
 }
+export { findFirstNonRepeating1, findFirstNonRepeating2, findFirstNonRepeating3, findFirstNonRepeating4, findFirstNonRepeating5 };

@@ -107,3 +107,4 @@ function traverseGraphBFS(startNode) {
 }
 // Pros: Memory efficient for very large graphs, can be used to generate values on demand.
 // Cons: More complex to understand, requires additional code to use.
+export { createGraphNode, graphTraversal1, graphTraversal2, graphTraversal3, graphTraversal4, traverseGraphDFS, graphTraversal5, traverseGraphBFS };

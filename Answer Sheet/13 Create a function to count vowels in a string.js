@@ -34,3 +34,4 @@ function countVowels5(str) {
     }
     return count;
 }
+export { countVowels1, countVowels2, countVowels3, countVowels4, countVowels5 };
