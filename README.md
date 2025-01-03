@@ -150,5 +150,3 @@ This file contains multiple JavaScript functions to solve the N-Queens problem u
 
 ## **50. Create a method to implement a basic LRU cache**
 This file contains multiple JavaScript functions to implement a basic LRU cache using different approaches: a Map and array, a Map and doubly linked list, an object and array, a Map and a while loop, and a Map and forEach.
-
-sample pull
