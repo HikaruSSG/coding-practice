@@ -6,7 +6,7 @@ This file contains multiple JavaScript functions to reverse a string using diffe
 ## **2. Create a palindrome checker**
 This file contains multiple JavaScript functions to check if a string is a palindrome using different approaches: built-in methods, a for loop, recursion, two pointers, and every.
 
-## **3. Implement a factorial calculator**
+## **3. Implement a functional calculator**
 This file contains JavaScript functions to implement a basic calculator with +, -, *, / operations using if-else statements, a switch statement, an object literal, eval, and a function map. It also includes JavaScript functions to calculate the factorial of a number using a for loop, recursion, a while loop, reduce, and a ternary operator with recursion.
 
 ## **4. Generate the Fibonacci sequence**
